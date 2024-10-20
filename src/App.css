@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container {
+    display: flex;
+    height: 100vh;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .sidebar {
+    width: 300px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-right: 1px solid #ddd;
   }
-  to {
-    transform: rotate(360deg);
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
   }
-}
+  
+  .add-pin-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .add-pin-button:hover,
+  .add-pin-button:focus {
+    background-color: #0056b3;
+    outline: none;
+  }
+  
+  .pins-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .pins-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #444;
+    display: flex;
+    align-items: center;
+  }
+  
+  .pin-icon {
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  .map-container {
+    flex-grow: 1;
+    position: relative;
+  }
+  
+  .map {
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #ddd;
+    position: relative;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .add-pin-button {
+      font-size: 14px;
+    }
+  
+    .map-container {
+      height: 400px; 
+    }
+  }
+  

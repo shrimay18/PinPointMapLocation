@@ -1,0 +1,56 @@
+.pin-list-container {
+    width: 30%;
+    padding: 20px;
+    background-color: #1c1e1e;
+    overflow-y: auto;
+    height: 100%;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pins-list {
+    margin-top: 20px;
+  }
+  
+  .pin-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #0062ff, rgb(37, 241, 248));
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pin-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pin-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .pin-address {
+    font-size: 0.9em;
+    color: #393838;
+    margin: 0;
+  }
+  
+  .no-pins {
+    color: #232222;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h2 {
+    margin: 5px;
+    color:white;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
